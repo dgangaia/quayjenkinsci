@@ -38,7 +38,7 @@ class HandlerClass(SimpleHTTPRequestHandler):
             request[addr_pair]=[num,ts]
         file=open("index.html", "w")
         #file.write("<!DOCTYPE html> <html> <body><center><h1><font color=\"blue\" face=\"Georgia, Arial\" size=8><em>Real</em></font> Visit Results</h1></center>");
-        file.write("<!DOCTYPE html> <html> <body><center><h1><img src=\"redhat.png\" alt=\"Coreos\" width=\"800\" height=\"350\">");  
+        file.write("<!DOCTYPE html> <html> <body><center><h1><img src=\"redhat.png\" alt=\"Coreos\" width=\"900\" height=\"350\">");  
         for pair in request:
             if pair[0] == host:
                 guest = "LOCAL: "+pair[0]
