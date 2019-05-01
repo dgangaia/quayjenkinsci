@@ -49,6 +49,7 @@ class HandlerClass(SimpleHTTPRequestHandler):
             else:
                 file.write("<p style=\"font-size:150%\" >#"+ str(request[pair][1]) +": <font color=\"maroon\">"+str(request[pair][0])+ "</font> requests " + "from &lt<font color=\"navy\">"+guest+"</font>&gt to WebServer &lt<font color=\"navy\">"+pair[1]+"</font>&gt</p>")
         file.write("</body> </html>");
+        
         file.close()
         pickle.dump(request,open("pickle_data.txt","w"))
 
